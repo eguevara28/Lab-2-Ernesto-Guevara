@@ -124,7 +124,9 @@ public class Lab2ErnestoGuevara {
                 }
                 
                 if(dia.equals("jueves")){
-                    System.out.println("Ingrese el porcentaje de asistencia: ");
+                    
+                    String nivel="Practica Hablada";
+                    System.out.println("Hoy es dia de :"+nivel+" Ingrese el porcentaje de asistencia: ");
                     int porcentaje=lea.nextInt();
                     
                     if(porcentaje>50){
@@ -137,6 +139,8 @@ public class Lab2ErnestoGuevara {
                 }
                 
                 if(dia.equals("viernes")){
+                    String nivel="Ingles para Extranjeros";
+                    System.out.println("Hoy es dia de "+nivel);
                     if(fechadia==1 && fechames==1 || fechadia==1 && fechames==7){
                         System.out.println("Comienzo de nuevo ciclo");
                         System.out.println("Cuantos alumnos ingresaran: ");
@@ -147,7 +151,7 @@ public class Lab2ErnestoGuevara {
                         double pago=alumnos*precio;
                         
                         System.out.println("El total a pagar: "+pago);
-                    }
+                    }else System.out.println("No es inicio de ciclo");
                 }               
             }
             
